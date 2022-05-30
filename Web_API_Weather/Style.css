@@ -1,0 +1,132 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    height : 100vh;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Add color to the background */
+
+    background : linear-gradient(to top,rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url(./Img/spring.png) no-repeat center/cover;
+}
+
+    /* Content */
+
+#weather{
+    width: 350px;
+    border-radius: 10px;
+    padding: 30px 20px;
+    background: url(./Img/spring.png) no-repeat center/cover;
+}
+
+    /* Change background and background content */
+
+.spring{
+    background : linear-gradient(to top,rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url(./Img/spring.png) no-repeat center/cover;
+}
+.spring #weather{
+    background: url(./Img/spring.png) no-repeat center/cover;
+}
+    /* Summer */
+.summer{
+    background : linear-gradient(to top,rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url(./Img/summer.png) no-repeat center/cover;
+}
+.summer #weather{
+    background: url(./Img/summer.png) no-repeat center/cover;
+}
+    /* Fall */
+.fall{
+    background : linear-gradient(to top,rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url(./Img/fall.png) no-repeat center/cover;
+}
+.fall #weather{
+    background: url(./Img/fall.png) no-repeat center/cover;
+}
+    /* Winter */
+.winter{
+    background : linear-gradient(to top,rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url(./Img/winter.png) no-repeat center/cover;
+}
+.winter #weather{
+    background: url(./Img/winter.png) no-repeat center/cover;
+}
+
+
+
+.search{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 0 15px;
+    transition:0.4s;
+    font-size:19px;
+    background: rgba(255,255,255,0.2)
+}
+
+.search:focus{
+    border-radius: 15px 0;
+    background: rgba(255,255,255,0.7)
+}
+
+    /*edit content */
+
+.content{
+    text-align: center;
+    color:white;
+    margin:40px 0;
+    transition: 0.4;
+}
+
+
+.capital{
+    text-shadow:2px 2px rgba(0,0,0,0.5)
+}
+
+.time{
+    margin: 15px 0;
+    font-size:15px;
+}
+
+.temperature{
+    font-size:65px;
+    text-shadow: 4px 4px rgba(0,0,0,0.8);
+    box-shadow:4px 4px rgba(0,0,0,0.5);
+    border:none;
+    border-radius:10px;
+    margin:0 30px;
+    padding: 20px;
+    background:rgba(255,255,255,0.4)
+}
+
+
+.short-desc{
+    font-size:35px;
+    font-weight: blod;
+    text-shadow: 2px 2px rgba(0,0,0,0.6);
+    margin:30px;
+}
+
+.more-desc{
+    display:flex;
+    justify-content: space-between;
+}
+
+.more-desc div{
+    display:flex;
+    flex-direction: column;
+    padding:5px;
+}
+
+.more-desc div i{
+    margin: 10px 0;
+}
+
+
+.hide{
+    visibility: hidden;
+    opacity: 0;
+}
